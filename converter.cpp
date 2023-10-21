@@ -33,5 +33,20 @@ void Converter::userInterface(){
 
 }
 
+void Converter::printNumber() {
+    std::cout << "The result is: " << std::endl;
+}
+
+std::string Converter::decimalToHexadecimal(int &decimal) {
+    std::string hexadecimal;
+    return hexadecimal;
+}
+
+int Converter::hexadecimalToDecimal(std::string hexadecimal) {
+    int decimal;
+    return decimal;
+}
+
+
 
 #include "converter.h"

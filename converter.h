@@ -11,10 +11,8 @@
 class Converter {
     std::string hexadecimal;
     int decimal;
-
     std::string decimalToHexadecimal(int &decimal);
-    int hexadecimalToDecimal(std::string hexadecimal)
-
+    int hexadecimalToDecimal(std::string hexadecimal);
 public:
     std::string readInput();
     void userInterface();
