@@ -1,6 +1,8 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    // chose if you want to convert from decimal to hexadecimal or from hexadecimal to decimal
+    // input number
+    // print result
     return 0;
 }
