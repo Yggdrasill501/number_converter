@@ -26,7 +26,7 @@ void Converter::userInterface(){
         try {
             decimal = std::stoi(input);
             hexadecimal = decimalToHexadecimal(decimal);
-            printNumber(hexadecimal)
+            printNumber(hexadecimal);
         } catch (const std::exception &e) {
             std::cerr << "Invalid input. Please enter a valid decimal number." << std::endl;
         }
@@ -36,7 +36,7 @@ void Converter::userInterface(){
         std::string input = readInput();
         decimal = hexadecimalToDecimal(input);
         if (decimal != -1) {
-            printNumber(std::int decimal));
+            printNumber(int decimal);
         } else {
             std::cerr << "Invalid input. Please enter a valid hexadecimal number." << std::endl;
         }
