@@ -35,11 +35,7 @@ void Converter::userInterface(){
     else if(choice == 2){
         std::string input = readInput();
         decimal = hexadecimalToDecimal(input);
-        if (decimal != -1) {
-            printNumber(int decimal);
-        } else {
-            std::cerr << "Invalid input. Please enter a valid hexadecimal number." << std::endl;
-        }
+        printNumber(int decimal);
     }
     else{
         std::cout << "Wrong choice. Please enter 1 or 2." << std::endl;
@@ -85,6 +81,7 @@ int Converter::hexadecimalToDecimal(std::string &hexadecimal) {
         }
 
         baseValue *= 16;
+        return decimalResult;
     }
 
     return decimalResult;
@@ -94,7 +91,7 @@ void Converter::printNumber(std::string &number) {
     std::cout << "Result: " << number << std::endl;
 }
 
-void Converter::printNumber(int &number) {
+void Converter::printNumber(int number) {
     std::cout << "Result: " << number << std::endl;
 }
 
