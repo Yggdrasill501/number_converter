@@ -17,7 +17,8 @@ class Converter {
 public:
     std::string readInput();
     void userInterface();
-    void printNumber();
+    void printNumber(std::string &number);
+    void printNumber(int &number);
 };
 
 #endif //NUMBER_CONVERTER_CONVERTER_H
