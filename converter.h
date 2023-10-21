@@ -9,10 +9,11 @@
 #include <string>
 
 class Converter {
+    std::string hexChars = "0123456789ABCDEF";
     std::string hexadecimal;
     int decimal;
     std::string decimalToHexadecimal(int &decimal);
-    int hexadecimalToDecimal(std::string hexadecimal);
+    int hexadecimalToDecimal(std::string &hexadecimal);
 public:
     std::string readInput();
     void userInterface();
