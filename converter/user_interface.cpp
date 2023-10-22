@@ -24,7 +24,7 @@ void Converter::userInterface(){
     else if(choice == 2){
         std::string input = readInput();
         decimal = hexadecimalToDecimal(input);
-        printNumber(int decimal);
+        printNumber( decimal);
     }
     else{
         std::cout << "Wrong choice. Please enter 1 or 2." << std::endl;

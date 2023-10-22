@@ -3,17 +3,17 @@
 //
 #include "converter.h"
 
-std::string Converter::decimalToHexadecimal(int &decimal) {
-    if (decimal == 0) {
+std::string Converter::decimalToHexadecimal(int &i) {
+    if (i == 0) {
         return "0";
     }
 
     std::string hexResult;
 
-    while (decimal > 0) {
-        int remainder = decimal % 16;
+    while (i > 0) {
+        int remainder = i % 16;
         hexResult += hexChars[remainder];
-        decimal /= 16;
+        i /= 16;
     }
 
     std::reverse(hexResult.begin(), hexResult.end());

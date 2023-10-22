@@ -12,8 +12,8 @@ class Converter {
     std::string hexChars = "0123456789ABCDEF";
     std::string hexadecimal;
     int decimal;
-    std::string decimalToHexadecimal(int &decimal);
-    int hexadecimalToDecimal(std::string &hexadecimal);
+    std::string decimalToHexadecimal(int &i);
+    int hexadecimalToDecimal(std::string &string);
 public:
     std::string readInput();
     void userInterface();

@@ -4,16 +4,16 @@
 #include "converter.h"
 #include <cctype>
 
-int Converter::hexadecimalToDecimal(std::string &hexadecimal) {
+int Converter::hexadecimalToDecimal(std::string &str) {
     int decimalResult = 0;
     int baseValue = 1;
 
-    for (char &c : hexadecimal) {
+    for (char &c : str) {
         c = std::toupper(c);
     }
 
-    for (int i = hexadecimal.size() - 1; i >= 0; i--) {
-        char hexChar = hexadecimal[i];
+    for (int i = str.size() - 1; i >= 0; i--) {
+        char hexChar = str[i];
 
         if (hexChar >= '0' && hexChar <= '9') {
             decimalResult += (hexChar - '0') * baseValue;
@@ -22,12 +22,9 @@ int Converter::hexadecimalToDecimal(std::string &hexadecimal) {
         } else {
             std::cerr << "Invalid hex character: " << hexChar << std::endl;
             return -1;
-            break;
         }
 
         baseValue *= 16;
-        return decimalResult;
+        return baseValue;
     }
-
-    return decimalResult;
 }

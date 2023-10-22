@@ -7,6 +7,6 @@ void Converter::printNumber(std::string &number) {
     std::cout << "Result: " << number << std::endl;
 }
 
-void Converter::printNumber(int number) {
+void Converter::printNumber(int &number) {
     std::cout << "Result: " << number << std::endl;
 }
