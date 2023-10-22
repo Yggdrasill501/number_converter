@@ -78,10 +78,11 @@ int Converter::hexadecimalToDecimal(std::string &hexadecimal) {
         } else {
             std::cerr << "Invalid hex character: " << hexChar << std::endl;
             return -1;
+            break;
         }
 
         baseValue *= 16;
-        return decimalResult;
+    return decimalResult;
     }
 
     return decimalResult;
