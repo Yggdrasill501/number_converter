@@ -2,7 +2,6 @@
 // Created by Filip Žitný on 22/10/2023.
 //
 #include "converter.h"
-#include <iostream>
 
 std::string Converter::decimalToHexadecimal(int &decimal) {
     if (decimal == 0) {

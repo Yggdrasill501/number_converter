@@ -1,7 +1,6 @@
 //
 // Created by Filip Žitný on 22/10/2023.
 //
-#include <iostream>
 #include "converter.h"
 
 std::string Converter::readInput() {

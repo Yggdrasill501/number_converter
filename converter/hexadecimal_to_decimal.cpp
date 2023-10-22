@@ -1,13 +1,8 @@
 //
-// Created by Filip Žitný on 21/10/2023.
+// Created by Filip Žitný on 22/10/2023.
 //
 #include "converter.h"
-#include <iostream>
-#include <string>
 #include <cctype>
-#include <algorithm>
-
-
 
 int Converter::hexadecimalToDecimal(std::string &hexadecimal) {
     int decimalResult = 0;
@@ -31,18 +26,8 @@ int Converter::hexadecimalToDecimal(std::string &hexadecimal) {
         }
 
         baseValue *= 16;
-    return decimalResult;
+        return decimalResult;
     }
 
     return decimalResult;
 }
-
-void Converter::printNumber(std::string &number) {
-    std::cout << "Result: " << number << std::endl;
-}
-
-void Converter::printNumber(int number) {
-    std::cout << "Result: " << number << std::endl;
-}
-
-#include "converter.h"
