@@ -7,13 +7,6 @@
 #include <cctype>
 #include <algorithm>
 
-std::string Converter::readInput() {
-    std::string input;
-    std::cout << "Enter a number: ";
-    std::cin >> input;
-    return input;
-}
-
 void Converter::userInterface(){
     int choice;
     std::cout << "Choose if you want to convert from decimal to hexadecimal or from hexadecimal to decimal:" << std::endl;
